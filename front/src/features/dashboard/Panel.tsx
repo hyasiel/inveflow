@@ -6,8 +6,8 @@ export function Panel() {
     <Fragment>
       <div className="panel-box">
         <Header />
-        <aside className="aside"></aside>
-        <main className="main"></main>
+        <aside className="aside">aside</aside>
+        <main className="main">main</main>
       </div>
     </Fragment>
   );
