@@ -1,5 +1,14 @@
 import { Fragment } from "react";
+import { Header } from "@shared/layout/header/Header";
 
 export function Panel() {
-  return <Fragment></Fragment>;
+  return (
+    <Fragment>
+      <div className="panel-box">
+        <Header />
+        <aside className="aside"></aside>
+        <main className="main"></main>
+      </div>
+    </Fragment>
+  );
 }

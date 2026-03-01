@@ -8,7 +8,9 @@ export function Header() {
         {/* Nav section*/}
 
         <nav>
-          <a href=""><img src={logo} alt="Inveflow" /></a>
+          <Link to="/">
+            <img src={logo} alt="Inveflow" />
+          </Link>
 
           <ul className="header-list">
             <li className="header-item">

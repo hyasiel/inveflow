@@ -7,8 +7,10 @@ header {
   justify-content: center;
 }
 
+
 nav {
-  position: relative;
+  user-select: none;
+  position: absolute;
   top: 10px;
   border-radius: 50px;
   background: #00000057;
