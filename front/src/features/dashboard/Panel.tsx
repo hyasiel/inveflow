@@ -12,18 +12,26 @@ export function Panel() {
               src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg"
               alt=""
             />
-
-            {/*esta lista aplicara como botones de muestreo de elementos, no como enlaces*/}
-            <ul className="aside-list">
-              <li className="aside-item">Item1</li>
-              <li className="aside-item">Item2</li>
-              <li className="aside-item">Item3</li>
-              <li className="aside-item">Item4</li>
-              <li className="aside-item">Item5</li>
-            </ul>
           </div>
+
+          {/*esta lista aplicara como botones de muestreo de elementos, no como enlaces*/}
+          <ul className="aside-list">
+            <li className="aside-item item-almacen">almacenes</li>
+            <li className="aside-item item-products">productos</li>
+            <li className="aside-item item-analytics">analisis detallado</li>
+          </ul>
+          <ul className="aside-list-action">
+            <li className="aside-item item-exit">salir</li>
+          </ul>
         </aside>
-        <main className="main">main</main>
+        <main className="main panel-general">
+          <div className="main-item main-products">total de productos</div>
+          <div className="main-item main-edit">editar productos</div>
+          <div className="main-item main-categories">categorias actuales</div>
+          <div className="main-item main-suppliers">proveedores</div>
+          <div className="main-item main-actual">almacen actual</div>
+          <div className="main-item main-analytics">analisis</div>
+        </main>
       </div>
     </Fragment>
   );
