@@ -34,7 +34,7 @@
   width: 100%;
   max-width: 200px;
   min-width: 130px;
-  justify-self: center;
+  align-self: center;
 }
 
 .aside-list-action{
@@ -50,6 +50,7 @@
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 2px 0 rgb(112, 112, 112);
+  
 }
 
 /*main styles*/
