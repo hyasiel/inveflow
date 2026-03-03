@@ -11,7 +11,7 @@
   padding-left: 10px;
   padding-right: 10px;
   grid-area: aside;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(59, 59, 59);
   height: 100%;
   box-shadow: 0 0 6px 0 grey;
   display: flex;
@@ -43,13 +43,13 @@
 
 .aside-item {
   list-style: none;
-  background-color: rgba(0, 0, 194, 0.534);
+  background-color: rgba(131, 131, 131, 0.281);
   color: white;
   padding: 5px;
   text-align: center;
   border-radius: 5px;
   border: none;
-  box-shadow: 0 0 2px 0 rgb(112, 112, 112);
+  box-shadow: 0 0 2px 0 rgb(34, 34, 34);
   
 }
 
@@ -63,9 +63,9 @@
   padding: 10px;
 }
 
-.main div {
+.main-item {
   border: none;
-  box-shadow: 0 0 2px 0 grey;
+  box-shadow: 0 0 2px 0 rgb(59, 59, 59);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -75,8 +75,17 @@
 .main-products {
   grid-column: 1/7;
   grid-row: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+
 }
 
+.main-products div{
+  outline: 1px solid rgb(59, 59, 59);
+}
+ 
 .main-edit {
   grid-column: 5/7;
   grid-row: 1;

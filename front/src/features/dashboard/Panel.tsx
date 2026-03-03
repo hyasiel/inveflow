@@ -1,8 +1,18 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 //import { Header } from "@shared/layout/header/Header";
 //import { Footer } from "@shared/layout/footer/Footer";
 import "./panel.css";
+
 export function Panel() {
+  //variables de estado para mostrar los datos en el panel
+  const [currentAlmacen, setCurrentAlmacen] = useState("mi almacen");
+  const [productsTotal, setProductsTotal] = useState(0);
+  const [graphics, setGraphics] = useState("graficos");
+  const [currentStock, setCurrentStock] = useState(0);
+  const [productsAgotados, setProductsAgotados] = useState(0);
+  const [categories, setCategories] = useState("");
+  const [suppliers, setSuppliers] = useState("");
+
   return (
     <Fragment>
       <div className="panel-box">
@@ -25,11 +35,16 @@ export function Panel() {
           </ul>
         </aside>
         <main className="main panel-general">
-          <div className="main-item main-products">total de productos</div>
+          <div className="main-item main-products">
+            <div className="total">{productsTotal}</div>
+            <div className="graphics">{graphics}</div>
+            <div className="stock">{currentStock}</div>
+            <div className="agotados">{productsAgotados}</div>
+          </div>
           <div className="main-item main-edit">editar productos</div>
-          <div className="main-item main-categories">categorias actuales</div>
-          <div className="main-item main-suppliers">proveedores</div>
-          <div className="main-item main-actual">almacen actual</div>
+          <div className="main-item main-categories">{categories}</div>
+          <div className="main-item main-suppliers">{suppliers}</div>
+          <div className="main-item main-actual">{currentAlmacen}</div>
           <div className="main-item main-analytics">analisis</div>
         </main>
       </div>
