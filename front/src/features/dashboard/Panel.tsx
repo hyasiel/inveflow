@@ -11,7 +11,11 @@ export function Panel() {
   const [currentStock, setCurrentStock] = useState(0);
   const [productsAgotados, setProductsAgotados] = useState(0);
   const [categories, setCategories] = useState("");
-  const [suppliers, setSuppliers] = useState("");
+  const [suppliers, setSuppliers] = useState([
+    { name: "sede central", total: 0 },
+    { name: "sede norte", total: 0 },
+    { name: "sede sur", total: 0 },
+  ]);
 
   return (
     <Fragment>
@@ -43,8 +47,23 @@ export function Panel() {
           </div>
           <div className="main-item main-edit">editar productos</div>
           <div className="main-item main-categories">{categories}</div>
-          <div className="main-item main-suppliers">{suppliers}</div>
-          <div className="main-item main-actual">{currentAlmacen}</div>
+          <div className="main-item main-suppliers">
+            <span className="element-title">Proveedores</span>
+
+            <div className="supplier-elements card-elements">
+              {suppliers.map((sup) => (
+                <span className="text">
+                  {sup.name}: {sup.total}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="main-item main-actual">
+            <span className="element-title">Almacen actual</span>
+            <div className="actual-elements card-elements">
+              <span className="text">{currentAlmacen}</span>
+            </div>
+          </div>
           <div className="main-item main-analytics">analisis</div>
         </main>
       </div>
